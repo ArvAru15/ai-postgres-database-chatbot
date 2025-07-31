@@ -127,6 +127,26 @@ if __name__ == "__main__":
 
 
 
+# --- Quick Sort Algorithm Implementation ---
+def quick_sort(arr):
+    """
+    Sorts an array using the Quick Sort algorithm.
+    Args:
+        arr (list): The list to be sorted.
+    Returns:
+        list: Sorted list.
+    """
+    if len(arr) <= 1:
+        return arr
+    else:
+        pivot = arr[len(arr) // 2]
+        left = [x for x in arr if x < pivot]
+        middle = [x for x in arr if x == pivot]
+        right = [x for x in arr if x > pivot]
+        return quick_sort(left) + middle + quick_sort(right)
+
+
+
     ### CHAT FACILITATION ###
 
     # Start the chat
