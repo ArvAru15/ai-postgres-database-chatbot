@@ -112,6 +112,15 @@ if __name__ == "__main__":
     st.title("🤖 AI Database Chatbot 🤓")
 
 
+# Dummy function with two for loops
+def dummy_function():
+    for i in range(5):
+        print(f"Outer loop: {i}")
+        for j in range(3):
+            print(f"  Inner loop: {j}")
+
+
+
 
     ### SESSION STATE ###
 
