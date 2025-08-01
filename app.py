@@ -170,3 +170,12 @@ if __name__ == "__main__":
         st.write(f"Tokens Used: {current_tokens}/{max_tokens}")
         if current_tokens > max_tokens:
             st.warning("Note: Due to character limits, some older messages might not be considered in ongoing conversations with the AI.")
+
+
+# Dummy function with two for loops (for demonstration/testing)
+def dummy_function():
+    for i in range(5):
+        print(f"Outer loop iteration: {i}")
+        for j in range(3):
+            print(f"  Inner loop iteration: {j}")
+
