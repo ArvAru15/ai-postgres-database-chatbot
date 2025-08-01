@@ -170,3 +170,18 @@ if __name__ == "__main__":
         st.write(f"Tokens Used: {current_tokens}/{max_tokens}")
         if current_tokens > max_tokens:
             st.warning("Note: Due to character limits, some older messages might not be considered in ongoing conversations with the AI.")
+
+
+# Quick sort function
+def quick_sort(arr):
+    """Sort a list using the quicksort algorithm."""
+    if len(arr) <= 1:
+        return arr
+    else:
+        pivot = arr[0]
+        less = [x for x in arr[1:] if x <= pivot]
+        greater = [x for x in arr[1:] if x > pivot]
+        return quick_sort(less) + [pivot] + quick_sort(greater)
+
+# Example:
+# print(quick_sort([3, 6, 2, 7, 1, 9]))
